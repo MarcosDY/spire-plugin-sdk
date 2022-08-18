@@ -8,7 +8,6 @@ import (
 	keymanagerv1 "github.com/spiffe/spire-plugin-sdk/proto/spire/plugin/server/keymanager/v1"
 	configv1 "github.com/spiffe/spire-plugin-sdk/proto/spire/service/common/config/v1"
 	"github.com/spiffe/spire-plugin-sdk/templates/server/keymanager"
-	"github.com/stretchr/testify/assert"
 )
 
 func Test(t *testing.T) {
@@ -32,7 +31,6 @@ func Test(t *testing.T) {
 			configClient,
 		},
 	})
-	assert.Fail(t, "oh no")
 
 	// TODO: Invoke methods on the clients and assert the results
 }
