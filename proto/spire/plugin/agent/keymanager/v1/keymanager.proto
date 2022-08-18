@@ -55,6 +55,9 @@ message PublicKey {
     // The fingerprinting algorithm is also left to plugin implementations. A
     // native implementation is a non-cryptographic hash over the PKIX data.
     string fingerprint = 4;
+
+
+    string testinvalid = 5;
 }
 
 message GenerateKeyRequest {
